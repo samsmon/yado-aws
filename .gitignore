@@ -1,0 +1,22 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!*.tfvars.example
+*.tfplan
+override.tf
+override.tf.json
+
+# Secrets and local config
+.env
+*.pem
+*.key
+
+# Emulator data
+emulation/volume/
+
+# Tooling
+.claude/
+.infracost/

@@ -75,8 +75,8 @@ modules/
   monitoring/   SNS topic, alarms, dashboard
 envs/prototype/ Wires the modules together
 emulation/      Local AWS emulator for rehearsal
-diagrams/       Script that builds the architecture diagram (SVG)
-assets/         AWS Architecture Icons for hand-drawn diagrams (see its README)
+diagrams/       Scripts that build the diagrams (SVG)
+assets/         Where the AWS icon pack goes (not committed, see its README)
 docs/           Architecture, cost, migration, failure drill, diagrams
 ```
 

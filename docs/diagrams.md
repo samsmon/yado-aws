@@ -32,6 +32,10 @@ connections, and let arrows cross titles. The owner called it a mess.
 |---|---|
 | `diagrams/build_architecture.py` | Generates the SVG. Edit this to change the diagram |
 | `docs/img/architecture.svg` | The generated diagram, committed so the README can show it |
+| `diagrams/build_findings.py` | Generates the findings-to-design-answers image. Reuses the helpers and the overlap check of `build_architecture.py` |
+| `docs/img/findings.svg` | Its output. The portfolio site shows the same file as `static/projects/yado-aws-2.svg` |
+| `diagrams/build_ha_webserver.py` | Generates the architecture diagram of the separate HA Web Server project (source of truth: the `ha-webserver` repo README). It lives here because the icon pack and the overlap check live here |
+| `docs/img/ha-webserver.svg` | Its output |
 
 Rebuild after any change, and commit both files together:
 
@@ -60,7 +64,8 @@ a label and stacked text, and that the real diagram is clean. Run it after
 changing the script. Keep the clearances in the script, not in your head.
 
 Never edit the SVG by hand. The script needs only Python 3 and the icon pack in
-`assets/aws-icons/` (see its README for the layout and the licence note). Icons
+`assets/aws-icons/`. The pack is not committed: its README says where to
+download it, and covers the layout and the licence note. Icons
 are embedded unmodified, each with its label.
 
 To check a render, open the SVG in a browser at full size and go through the
